@@ -55,7 +55,7 @@ body {
   width: 100%;
   table-layout: fixed;
   background-color: var(--prev-color);
-  color: var(--text-color);
+  color: #FF0000;
 }
 
 .message-row {
