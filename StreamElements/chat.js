@@ -45,14 +45,15 @@ window.addEventListener("onEventReceived", function (obj) {
   div.setAttribute("data-id", mid);
 
   // Apply static color if enabled, otherwise apply user chat color.
-  sts ? (div.style.color = clr) : (div.style.color = col);
+  //sts ? (div.style.color = clr) : (div.style.color = col);
 
   // if the message has a color prefix and custom colors are enabled, apply the color.
-  if (ccd && getColorCommand(bod)) div.style.color = getColorCommand(bod).color;
-  if (ccd && getColorCommand(bod))
-    div.innerHTML = attachEmote(getColorCommand(bod).message, emo);
+  //if (ccd && getColorCommand(bod)) div.style.color = getColorCommand(bod).color;
+  //if (ccd && getColorCommand(bod))
+  //  div.innerHTML = attachEmote(getColorCommand(bod).message, emo);
   // if not, don't apply any colours.
-  else div.innerHTML = attachEmote(bod, emo);
+  //else
+  div.innerHTML = attachEmote(bod, emo);
 
   container.append(div);
   const el = document.querySelector(`[data-id="${mid}"]`);
